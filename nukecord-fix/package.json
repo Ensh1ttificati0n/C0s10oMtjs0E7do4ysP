@@ -1,0 +1,60 @@
+{
+	"name": "nukecord",
+	"version": "1.1.6",
+	"description": "A Discord self-bot for raiding servers.",
+	"author": {
+		"name": "DarkGuy10",
+		"url": "https://github.com/DarkGuy10",
+		"email": "HarperBurn@protonmail.ch"
+	},
+	"main": "./lib/cli.js",
+	"bin": "./lib/cli.js",
+	"license": "MIT",
+	"type": "module",
+	"engines": {
+		"node": ">=18.0.0"
+	},
+	"files": [
+		"lib/**/*"
+	],
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node . ",
+		"dev": "NODE_ENV=development node --loader ts-node/esm ./src/cli.ts",
+		"build": "tsc",
+		"format": "prettier -w .",
+		"prepack": "yarn build"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/DarkGuy10/Nukecord.git"
+	},
+	"packageManager": "yarn@4.0.2",
+	"dependencies": {
+		"badwords": "^1.0.0",
+		"chalk": "^5.3.0",
+		"discord.js-selfbot-v13": "^2.15.0",
+		"dotenv": "^16.3.1",
+		"ora": "^7.0.1",
+		"prompts": "^2.4.2",
+		"yargs": "^17.7.2"
+	},
+	"devDependencies": {
+		"@types/node": "^20.10.4",
+		"@types/prompts": "^2.4.9",
+		"@types/ws": "^8.5.10",
+		"@types/yargs": "^17.0.32",
+		"prettier": "^3.1.1",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.3.3"
+	},
+	"keywords": [
+		"N-u-ked",
+		"Nukecord",
+		"discordnuked",
+		"Raiding",
+		"Nuking",
+		"Selfbot",
+		"Discord"
+	]
+}
